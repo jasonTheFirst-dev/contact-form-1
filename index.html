@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <section>
+      <div class="image--col"></div>
+      <div class="form--section">
+        <h1>Contact</h1>
+        <form action="GET">
+          <div class="first--row--contact">
+            <div class="first--name--box">
+              <label for="first--name">first name</label>
+              <input
+                type="text"
+                id="first--name"
+                class="first--name"
+                name="first--name"
+              />
+            </div>
+            <div class="last--name--box">
+              <label for="last--name">last name</label>
+              <input
+                type="text"
+                id="last--name"
+                class="last--name"
+                name="last--name"
+              />
+            </div>
+          </div>
+          <div class="second--row--contact">
+            <label for="email">e-mail</label>
+            <input type="email" id="email" class="email4" name="email" />
+          </div>
+          <div class="third--row--contact">
+            <textarea
+              name="message"
+              id="message"
+              cols="50"
+              rows="8"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="send" class="submit"/>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Source Serif Pro", serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,900;1,600;1,700&display=swap");
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-size: medium;
+  color: #333;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.image--col {
+  width: 40%;
+  height: 100%;
+
+  background-image: url(/images/cat-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: left 0rem bottom 0px;
+}
+.form--section {
+  width: 60%;
+  height: 100%;
+  padding: 5rem 0 1rem 2rem;
+}
+.form--section h1 {
+  color: #333;
+  font-weight: bolder;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+form {
+  display: block;
+  width: 500px;
+  padding: 6rem 0 0 0;
+
+}
+form label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: block;
+}
+form .first--row--contact {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  gap: 1rem;
+
+}
+form .first--row--contact label {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+form .first--row--contact input {
+  display: inline-block;
+  margin-top: 10px;
+  line-height: 40px;
+  width: 240px;
+  border: none;
+  border-bottom: 2px solid #cacaca;
+  font-family: "Source Serif Pro", serif;
+}
+
+.second--row--contact {
+  display: block;
+  margin-top: 2rem;
+}
+.second--row--contact label {
+  display: block;
+  margin-top: 40px;
+}
+.second--row--contact input {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cacaca;
+}
+
+.third--row--contact {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+}
+
+.third--row--contact textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cacaca;
+  resize: none;
+}
+textarea::placeholder {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.submit {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 200px;
+  line-height: 65px;
+  /* background-color: #000; */
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 30%, #000);
+  box-shadow: 0 15px 60px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
