@@ -21,6 +21,7 @@
                 id="first--name"
                 class="first--name"
                 name="first--name"
+                required
               />
             </div>
             <div class="last--name--box">
@@ -30,14 +31,43 @@
                 id="last--name"
                 class="last--name"
                 name="last--name"
+                required
               />
+            </div>
+          </div>
+          <div class="username--row--contact">
+            <label for="username"></label>
+            <input
+              type="text"
+              id="username"
+              class="username"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+          <div class="age-gender--row">
+            <div class="gender--box">
+              <label for="gender"></label>
+              <select name="gender" class="gender-selected" required>
+                <option value="">select your gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+              </select>
+            </div>
+            <div class="age--box">
+              <label for="age"></label>
+              <input type="number" name="age" id="age" placeholder="Your age" />
             </div>
           </div>
           <div class="second--row--contact">
             <label for="email">e-mail</label>
             <input type="email" id="email" class="email4" name="email" />
           </div>
-          <div class="third--row--contact">
+          <div class="password--row">
+            <label for="email">Password</label>
+            <input type="password" id="email" class="email4" name="email" />
+          </div>
+          <!-- <div class="third--row--contact">
             <textarea
               name="message"
               id="message"
@@ -45,8 +75,8 @@
               rows="8"
               placeholder="Message"
             ></textarea>
-          </div>
-          <input type="submit" value="send" class="submit"/>
+          </div> -->
+          <input type="submit" value="send" class="submit" />
         </form>
       </div>
     </section>

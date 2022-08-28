@@ -35,7 +35,7 @@ section {
 .form--section {
   width: 60%;
   height: 100%;
-  padding: 5rem 0 1rem 2rem;
+  padding: 3rem 0 1rem 2rem;
 }
 .form--section h1 {
   color: #333;
@@ -47,7 +47,6 @@ form {
   display: block;
   width: 500px;
   padding: 6rem 0 0 0;
-
 }
 form label {
   text-transform: uppercase;
@@ -62,7 +61,6 @@ form .first--row--contact {
   align-items: flex-start;
   justify-content: stretch;
   gap: 1rem;
-
 }
 form .first--row--contact label {
   display: block;
@@ -80,6 +78,67 @@ form .first--row--contact input {
   font-family: "Source Serif Pro", serif;
 }
 
+.username--row--contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  border-bottom: 2px solid #cacaca;
+  margin-top: 1rem;
+}
+.username--row--contact input {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+}
+
+.username::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.age-gender--row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.age-gender--row .gender--box {
+  border: 2px solid #cacaca;
+  /* border-bottom: 2px solid #cacaca; */
+  width: 50%;
+  line-height: 30px;
+}
+.age-gender--row .age--box {
+  /* border: 3px solid red; */
+  border-bottom: 2px solid #cacaca;
+  width: 50%;
+  line-height: 30px;
+}
+.gender--box select {
+  display: block;
+  width: 100%;
+  padding: 0.3rem 0;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gender--box .gender--selected option {
+  font-weight: bolder;
+}
+.age--box input {
+  text-align: center;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-family: "Source Serif Pro", serif;
+  /* line-height: 30px; */
+}
 .second--row--contact {
   display: block;
   margin-top: 2rem;
@@ -95,7 +154,18 @@ form .first--row--contact input {
   border: none;
   border-bottom: 2px solid #cacaca;
 }
+.password--row {
+  display: block;
+  margin-top: 2rem;
+}
 
+.password--row input {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #cacaca;
+}
 .third--row--contact {
   width: 100%;
   display: block;
@@ -123,13 +193,11 @@ textarea::placeholder {
   border: none;
   border-radius: 200px;
   line-height: 65px;
-  /* background-color: #000; */
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 30%, #000);
   box-shadow: 0 15px 60px 1px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 500ms linear;
 }
 .submit:hover {
-    background: linear-gradient(to right top, rgba(0, 0, 0, 0.7) 30%, #000);
-
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.7) 30%, #000);
 }
