@@ -2,82 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
+    <title>signup/login form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <link rel="stylesheet" href="styles.css" />
   <body>
-    <section>
-      <div class="image--col"></div>
-      <div class="form--section">
-        <h1>Contact</h1>
-        <form action="GET">
-          <div class="first--row--contact">
-            <div class="first--name--box">
-              <label for="first--name">first name</label>
-              <input
-                type="text"
-                id="first--name"
-                class="first--name"
-                name="first--name"
-                required
-              />
-            </div>
-            <div class="last--name--box">
-              <label for="last--name">last name</label>
-              <input
-                type="text"
-                id="last--name"
-                class="last--name"
-                name="last--name"
-                required
-              />
-            </div>
+    <section id="main--con" class="main--con">
+      <div class="contact--con">
+        <div class="lt--col">
+          <div class="vid--con">
+            <video src="/assets/cus--service.mp4">
+              <source src="/assets/cus--service.mp4" type="video/mp4" />
+              Your browser doesn't support this audio file. Here is a
+              <a href="/assets/cus--service.mp4">link to the audio</a> instead.
+            </video>
           </div>
-          <div class="username--row--contact">
-            <label for="username"></label>
-            <input
-              type="text"
-              id="username"
-              class="username"
-              name="username"
-              placeholder="Username"
-            />
-          </div>
-          <div class="age-gender--row">
-            <div class="gender--box">
-              <label for="gender"></label>
-              <select name="gender" class="gender-selected" required>
-                <option value="">select your gender</option>
-                <option value="male">male</option>
-                <option value="female">female</option>
-              </select>
-            </div>
-            <div class="age--box">
-              <label for="age"></label>
-              <input type="number" name="age" id="age" placeholder="Your age" />
-            </div>
-          </div>
-          <div class="second--row--contact">
-            <label for="email">e-mail</label>
-            <input type="email" id="email" class="email4" name="email" />
-          </div>
-          <div class="password--row">
-            <label for="email">Password</label>
-            <input type="password" id="email" class="email4" name="email" />
-          </div>
-          <!-- <div class="third--row--contact">
-            <textarea
-              name="message"
-              id="message"
-              cols="50"
-              rows="8"
-              placeholder="Message"
-            ></textarea>
-          </div> -->
-          <input type="submit" value="send" class="submit" />
-        </form>
+        </div>
+        <div class="rt--col">
+          <form action="" id="form" method="post">
+            <section class="form-into">
+              <h1>contact us</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus hic impedit aliquam nemo quis. Provident?
+              </p>
+            </section>
+            <section class="form--content">
+              <div class="username">
+                <input type="text" name="name" id="name"  placeholder="your names"/>
+              </div>
+              <div class="usermail">
+                <input type="text" name="email" id="email"  placeholder="Your email"/>
+              </div>
+              <div class="telephone">
+                <input type="text" name="email" id="user--tel"  placeholder="Your mobile number"/>
+              </div>
+              <div class="text-area">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div class="submit--con">
+                <button type="submit" id="submit">submit</button>
+              </div>
+            </section>
+          </form>
+        </div>
       </div>
     </section>
   </body>
